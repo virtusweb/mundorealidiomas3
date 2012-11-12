@@ -1,0 +1,165 @@
+body {
+  background-image: url(/images/back1.jpg);
+  background-attachment: fixed;
+}
+
+
+.container {
+  background-color: white;
+}
+
+.header {
+  background-image: url(/images/colorh1.jpg);
+  background-repeat: repeat;
+}
+
+.header-right {
+  text-align: right;
+}
+
+.sidebar{
+  margin-top: 20px;
+  background-color: white;
+}
+.parini {
+  font-family: 'Amaranth', arial, serif;
+  font-size: 140%;
+  color: #2e3192;
+  text-align: center;
+  padding: 20px 10px 20px;
+  text-shadow: 1pt 1pt 3pt grey;
+}
+
+  
+.titulo {
+  font-family: 'Amaranth', arial, serif;
+  text-align: center;
+  font-size: 200%;
+  color:blue;
+  text-decoration: blink;
+}
+
+.titsab {
+  font-family: 'Delius', arial, serif;
+  text-align: center;
+  font-size: 250%;
+  color: #282a8f;
+  padding-top: 30px;
+}
+
+.parsab {
+  font-family: 'Delius', arial, serif;
+  font-size: 240%;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  text-align: rigth;
+  color: blue;
+}
+
+.parsab1 {
+  font-family: 'Delius', arial, serif;
+  font-size: 280%;
+  padding-bottom: 60px;
+  padding-top: 50px;
+  text-align: center;
+  color: red;
+  float: left;
+}
+
+
+    
+
+.conformes {
+  font-family: 'Amaranth', arial, serif;
+  font-size: 200%;
+  color: white;
+  text-align: right;
+  padding: 50px 10px;
+}
+
+
+.bottom-menu {
+  font-family: 'Amaranth', arial, serif;
+  font-size: 200%;
+  margin: 10px;
+  padding-top: 1px;
+}
+
+
+
+.menu {
+  padding: 4px 10px;
+  color: white;
+  font-family: 'Amaranth', arial, serif;
+  font-size: 120%;
+}
+
+.dir {
+  font-family: 'Amaranth', arial, serif;
+  font-size: 140%;
+  padding: 40px 20px 20px;
+}
+
+.hojac {
+  font-family: 'Amaranth', arial, serif;
+  font-size: 90%;
+  padding: 20px 5px 0px 0px;
+}
+
+
+.tabletx {
+  font-family: 'Amaranth', arial, serif;
+  font-size: 110%;
+  padding: 20px 5px 0px 0px;
+}
+.hero-unit {
+  padding-right: 0px;
+  margin-right: 20px;
+}
+
+.mapa {
+  padding: 40px 20px 20px 5px;
+}
+
+.forma {
+  padding: 40px 0px 0px 0px;
+}
+
+.tit {
+  font-family: 'Amaranth', arial, serif;
+  font-size: 200%;
+  text-align: left;
+  padding: 35px 10px 10px 10px;
+  //text-shadow: 1pt 1pt 3pt grey;
+}
+
+.subtit {
+  font-family: 'Amaranth', arial, serif;
+  font-size: 150%;
+  text-align: left;
+  padding: 10px;
+  //text-shadow: 1pt 1pt 3pt grey;
+}
+
+
+.parrafo {
+  font-family: 'Amaranth', arial, serif;
+  font-size: 130%;
+  padding: 15px;
+  text-align: justify;
+}
+        
+
+
+.footer {
+  font-family: 'Amaranth', arial, serif;
+  font-size: 120%;
+  text-align: center;
+}
+
+.slideshow {
+  padding: 20px 10px;
+  width: 350x;
+  height: 300px;
+}
+

@@ -1,0 +1,41 @@
+#uno
+  #slideshow
+
+    :javascript
+      $(function() {
+        $('#slideshow').crossSlide({
+          sleep: 2,
+          fade: 1
+        }, [
+          
+          { src: '/attachments/inicios.png', href: 'beneficios' },
+          { src: '/attachments/ini1.png', href: 'ingles' },
+          { src: '/attachments/ini2.png', href: 'empresas' },
+          { src: '/attachments/ini3.png', href: 'frances' },
+          { src: '/attachments/ini4.png', href: 'traducciones' },
+          { src: '/attachments/ini5.png', href: 'aleman' },
+          { src: '/attachments/ini6.png', href: 'empresas' },
+          { src: '/attachments/ini7.png', href: 'español' },
+          { src: '/attachments/ini8.png', href: 'niños' },
+          { src: '/attachments/ini9.png', href: 'chino' },
+          { src: '/attachments/ini10.png', href: 'serivicios' },
+          { src: '/attachments/ini11.png', href: 'italiano' }
+        ])
+      });
+  #titulo
+    %a{:href => "promociones"}PROMOCIONES 2012
+      
+#derecha 
+  #dos
+    ¡BIENVENIDOS!<br>
+    Te damos la bienvenda y te invitamos a que conozcas una forma dinámica de aprender idiomas de una manera fácil, divertida y en corto tiempo.<br/>
+    %a{:href => "principiantes"}
+      %img{:border=> "0", :src=> "/attachments/bprincipiantes1.png"}/
+    %a{:href => "calendario"}
+      %img{:border=> "0", :src=> "/attachments/binicios1.png"}/
+    %a{:href => "porque"}
+      %img{:border=> "0", :src=> "/attachments/bporque11.png"}/
+    %a{:href => "sabdom"}
+      %img{:border=> "0", :src=> "/attachments/bsabdom.png"}/
+  
+  

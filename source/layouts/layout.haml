@@ -1,10 +1,10 @@
 !!! 5
 %html
   %head
-    %title= data.page.title || "Virtus Medical"
-    %link(href='http://fonts.googleapis.com/css?family=Questrial&v1' rel='stylesheet' type='text/css')
-    = stylesheet_link_tag "bootstrap","medical"
-    = javascript_include_tag  "bootstrap"
+    %link(href='http://fonts.googleapis.com/css?family=Amaranth&v1' rel='stylesheet' type='text/css')
+    %title= data.page.title || "Mundo Real Idiomas"
+
+    = stylesheet_link_tag "bootstrap","mundoreal"
 
     %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"}
     %script{:src => "/javascripts/jquery.js"}
@@ -12,69 +12,160 @@
     
     %script{:src => "/javascripts/layout.js", :type => "text/javascript"}
     %script{:src => "/javascripts/bootstrap-carousel.js", :type => "text/javascript"}
+
+    
+    
+    
     
     :javascript
       $(function(){
         $('.carousel').carousel({interval: 1500});
       });
+    
 
-  %body.principal
-    .container    
-      .header
-        .row    
-          .span12
-            %img{:src => "/images/banner.png", :alt => "Virtus Medical"}       
+  %body
+    .container
+      .header    
         .row
-          .mtitle
-            La virtud de crear sistemas de información
-    .container    
+          .span5
+            %img{:src => "/images/logo.jpg", :alt => "Mundo Real Idiomas"}       
+          .span7
+            .conformes
+              ¡No te conformes con hablar un solo idioma!
+            
       .menu
         %ul.breadcrumb
           %li
             %a{:href => "/index.html"} Inicio
             %span.divider /
           %li
-            %a{:href => "/pages/productos.html"} Productos
+            %a{:href => "/pages/metodo.html"} Método
+            %span.divider /
+          %li
+            %a{:href => "/pages/cursos.html"} Cursos
+            %span.divider /
+          %li
+            %a{:href => "/pages/empresas.html"} Empresas
+            %span.divider /
+          %li
+            %a{:href => "/pages/beneficios.html"} Beneficios
+            %span.divider /
+          %li
+            %a{:href => "/pages/historia.html"} Historia
             %span.divider /
           %li
             %a{:href => "/pages/servicios.html"} Servicios
             %span.divider /
           %li
-            %a{:href => "/pages/clientes.html"} Clientes
+            %a{:href => "/pages/precios.html"} Precios
+            %span.divider /
+          %li
+            %a{:href => "/pages/promociones.html"} Promociones
+            %span.divider /
+          %li
+            %a{:href => "/pages/calendario.html"} Calendario de cursos
+            %span.divider /
+          %li
+            %a{:href => "/pages/bolsa.html"}Bolsa de trabajo
             %span.divider /
           %li
             %a{:href => "/pages/contacto.html"} Contacto
 
-      = yield
-       
+      .row
+        .span2
+          %ul.menu
+            %li
+              %a{:href => "/pages/ingles.html"}
+                %img{:src=> "/images/bingles1.png"}/
+            %li
+              %a{:href => "/pages/frances.html"}
+                %img{:src=> "/images/bfrances1.png"}/
+            %li
+              %a{:href => "/pages/aleman.html"}
+                %img{:src=> "/images/baleman1.png"}/
+            %li
+              %a{:href => "/pages/italiano.html"}
+                %img{:src=> "/images/bitaliano1.png"}/
+            %li
+              %a{:href => "/pages/chino.html"}
+                %img{:src=> "/images/bchino1.png"}/
+            %li
+              %a{:href => "/pages/espanol.html"}
+                %img{:src=> "/images/bespanol1.png"}/
+        .span10
+          = yield
+      .row
+        .bottom-menu
+          %ul.bottom-menu
+            %li
+              %a{:href => "/pages/unoauno.html"}
+                %img{:src=> "/images/bunoauno.jpg"}/
+            %li
+              %a{:href => "/pages/niños.html"}
+                %img{:src=> "/images/bninos.jpg"}/
+            %li
+              %a{:href => "/pages/calendario.html"}
+                %img{:src=> "/images/bcalendario.jpg"}/
+            %li
+              %a{:href => "/pages/traducciones.html"}
+                %img{:src=> "/images/btraducciones.png"}/
+            %li
+              %a{:href => "/pages/empresas.html"}
+                %img{:src=> "/images/bempresas.png"}/ 
+            %li
+              %a{:href => "/pages/toefl.html"} 
+                %img{:src=> "/images/btoefl.png"}/
+      .row
+        .footer
+          Boticelli # 75 Tercer piso esq. Av. Patriotismo Col. Nonoalco Mixcoac, México DF. Tel 5611-2761
+
+
+
+
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34354239-1']);
+      _gaq.push(['_setDomainName', 'corpjuridicoinmobiliario.com.mx']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+     
     :javascript
       $(document).ready(function() {
         var opts = {collapseTimer: 4000};
           $.each(['beforeExpand', 'afterExpand', 'onCollapse'], function(i, callback) {
           opts[callback] = function(byUser) {
             var by, msg = '' + callback;
-  
+
             if (callback == 'onCollapse') {
               msg += ' (' + (byUser ? 'user' : 'timer') + ')';
             }
             msg += '';
-  
+
             $(this).parent().parent().append(msg)
           }
         });
-  
+
         $('dl.expander dd').eq(0).expander();
         $('dl.expander dd').slice(1).expander(opts);
-  
-  
+
+
         $('ul.expander li').expander({
           slicePoint: 100,
           widow: 4,
           expandSpeed: 0,
           userCollapseText: '[^]'
         });
-  
+
         $('div.expander').expander();
       });       
- 
-       
+
+      
+
+
+
+

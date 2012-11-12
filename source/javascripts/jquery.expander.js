@@ -31,7 +31,7 @@
 
       // text displayed in a link instead of the hidden part of the element.
       // clicking this will expand/show the hidden/collapsed text
-      expandText: 'leer más',
+      expandText: 'Ver horarios',
       expandPrefix: '&hellip; ',
 
       expandAfterSummary: false,
