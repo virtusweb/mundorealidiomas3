@@ -19,7 +19,7 @@
     
     :javascript
       $(function(){
-        $('.carousel').carousel({interval: 1500});
+        $('.carousel').carousel({interval: 2000});
       });
     
 
@@ -63,13 +63,14 @@
             %a{:href => "/pages/promociones.html"} Promociones
             %span.divider /
           %li
+            %a{:href => "/pages/contacto.html"} Contacto
+
+          %li
             %a{:href => "/pages/calendario.html"} Calendario de cursos
             %span.divider /
           %li
             %a{:href => "/pages/bolsa.html"}Bolsa de trabajo
-            %span.divider /
-          %li
-            %a{:href => "/pages/contacto.html"} Contacto
+            
 
       .row
         .span2
@@ -95,26 +96,24 @@
         .span10
           = yield
       .row
-        .bottom-menu
-          %ul.bottom-menu
-            %li
-              %a{:href => "/pages/unoauno.html"}
-                %img{:src=> "/images/bunoauno.jpg"}/
-            %li
-              %a{:href => "/pages/niños.html"}
-                %img{:src=> "/images/bninos.jpg"}/
-            %li
-              %a{:href => "/pages/calendario.html"}
-                %img{:src=> "/images/bcalendario.jpg"}/
-            %li
-              %a{:href => "/pages/traducciones.html"}
-                %img{:src=> "/images/btraducciones.png"}/
-            %li
-              %a{:href => "/pages/empresas.html"}
-                %img{:src=> "/images/bempresas.png"}/ 
-            %li
-              %a{:href => "/pages/toefl.html"} 
-                %img{:src=> "/images/btoefl.png"}/
+        .span2
+          %a{:href => "/pages/unoauno.html"}
+            %img{:src=> "/images/bunoauno.jpg"}/
+        .span2
+          %a{:href => "/pages/niños.html"}
+            %img{:src=> "/images/bninos.jpg"}/
+        .span2
+          %a{:href => "/pages/calendario.html"}
+            %img{:src=> "/images/bcalendario.jpg"}/
+        .span2
+          %a{:href => "/pages/traducciones.html"}
+            %img{:src=> "/images/btraducciones.png"}/
+        .span2
+          %a{:href => "/pages/empresas.html"}
+            %img{:src=> "/images/bempresas.png"}/ 
+        .span2
+          %a{:href => "/pages/toefl.html"} 
+            %img{:src=> "/images/btoefl.png"}/
       .row
         .footer
           Boticelli # 75 Tercer piso esq. Av. Patriotismo Col. Nonoalco Mixcoac, México DF. Tel 5611-2761

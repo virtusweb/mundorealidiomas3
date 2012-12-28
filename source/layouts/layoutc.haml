@@ -1,0 +1,67 @@
+!!! 5
+%html
+  %head
+    %link(href='http://fonts.googleapis.com/css?family=Amaranth&v1' rel='stylesheet' type='text/css')
+    %title= data.page.title || "Mundo Real Idiomas"
+
+    = stylesheet_link_tag "bootstrap","mundoreal"
+
+    
+    %script{:src => "/javascripts/layout.js", :type => "text/javascript"}
+
+
+  %body
+    .container
+      .header    
+        .row
+          .span5
+            %img{:src => "/images/logo.jpg", :alt => "Mundo Real Idiomas"}       
+          .span7
+            .conformes
+              ¡No te conformes con hablar un solo idioma!
+            
+      .menu
+        %ul.breadcrumb
+          %li
+            %a{:href => "/index.html"} Inicio
+            %span.divider /
+          %li
+            %a{:href => "/pages/metodo.html"} Método
+            %span.divider /
+          %li
+            %a{:href => "/pages/cursos.html"} Cursos
+            %span.divider /
+          %li
+            %a{:href => "/pages/empresas.html"} Empresas
+            %span.divider /
+          %li
+            %a{:href => "/pages/beneficios.html"} Beneficios
+            %span.divider /
+          %li
+            %a{:href => "/pages/historia.html"} Historia
+            %span.divider /
+          %li
+            %a{:href => "/pages/servicios.html"} Servicios
+            %span.divider /
+          %li
+            %a{:href => "/pages/precios.html"} Precios
+            %span.divider /
+          %li
+            %a{:href => "/pages/promociones.html"} Promociones
+            %span.divider /
+          %li
+            %a{:href => "/pages/contacto.html"} Contacto
+
+          %li
+            %a{:href => "/pages/calendario.html"} Calendario de cursos
+            %span.divider /
+          %li
+            %a{:href => "/pages/bolsa.html"}Bolsa de trabajo
+            
+
+      
+      = yield
+
+
+
+
