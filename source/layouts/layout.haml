@@ -1,11 +1,14 @@
 !!! 5
 %html
   %head
+    %link{:href => "/images/favicon.ico", :rel => "shortcut icon"}/
     %link(href='http://fonts.googleapis.com/css?family=Amaranth&v1' rel='stylesheet' type='text/css')
+    %link(href='http://fonts.googleapis.com/css?family=Delius&v1' rel='stylesheet' type='text/css')
+    
     %title= data.page.title || "Mundo Real Idiomas"
 
     = stylesheet_link_tag "bootstrap","mundoreal"
-
+    
     %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"}
     %script{:src => "/javascripts/jquery.js"}
     %script{:src => "/javascripts/jquery.expander.js"}
